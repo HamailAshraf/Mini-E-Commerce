@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.card-hover-delay {
+  transition: shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card-hover-delay:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition-delay: 100ms; /* Adjust the delay as needed */
+}
